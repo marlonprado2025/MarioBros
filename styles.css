@@ -156,13 +156,14 @@ textarea {
 
 }
 
-.mascara-form {
+.mascaraForm {
     position: fixed;
     top: 0;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%,
             rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
 }
 
 /*
