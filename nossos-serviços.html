@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Nossos serviços</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .services-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 50px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .service-card {
+          background: #f0e3c1;
+          padding: 40px;
+          border-radius: 15px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          text-align: justify;
+        }
+        .service-card h3 {
+          margin: 0 0 10px;
+          color: #2c3e50;
+        }
+        .service-card p {
+          color: #7f8c8d;
+          margin: 0 0 15px;
+        }
+        .service-card button {
+          background: #097a0fb0;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        .service-card button:hover {
+          background: #2980b9;
+        }
+        .caixa-mae{
+            display: flex;
+            justify-content: center;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./img/logo-header.png">
+        <a href="index.html">Home</a>
+        <a href="nossos-serviços.html">Nossos serviços</a>
+        <a class="faleConosco" onclick="abrirForm()">Fale conosco</a>
+    </div>
+
+
+    <div class="caixa-mae">
+
+        <div class="box-main">
+            <section class="services-container">
+                <div class="service-card">
+                  <h3>Reparos</h3>
+                  <p>Consertos rápidos para torneiras, reparos de vazamentos, canos e válvulas.</p>
+                  <button class="botao" onclick="cliqueinobotao()">Solicitar Orçamento</button>
+                </div>
+
+                <div class="service-card">
+                  <h3>Desentupimento</h3>
+                  <p>Desobstrução de pias, ralos e esgotos com eficiência.</p>
+                 <button class="botao" onclick="cliqueinobotao()">Solicitar Orçamento</button>
+                </div>
+
+                <div class="service-card">
+                  <h3>Instalações Hidráulicas</h3>
+                  <p>Instalação de tubulações e equipamentos para sua casa.</p>
+                  <button class="botao" onclick="cliqueinobotao()">Solicitar Orçamento</button>
+                </div>
+               
+                <div class="service-card">
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Inspeção e manutenção de sistemas hidráulicos para evitar problemas como vazamentos ou entupimentos.</p>
+                    <button class="botao" onclick="cliqueinobotao()">Solicitar Orçamento</button>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Limpeza de Caixas d’Água e Cisternas</h3>
+                    <p>Higienização e manutenção de reservatórios de água para garantir qualidade.</p>
+                    <button class="botao" onclick="cliqueinobotao()">Solicitar Orçamento</button>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Troca de Tubulações e Canos</h3>
+                    <p>Substituição de tubulações antigas ou danificadas por materiais modernos, como PVC ou cobre.</p>
+                    <button class="botao" onclick="cliqueinobotao()">Solicitar Orçamento</button>
+                  </div>
+              </section>
+           
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+
+        <video src="./img/video (1).mp4" autoplay muted loop></video>
+
+        <div class="mascara"></div>
+
+    </div>
+
+    <a href="https://wa.me/5527996265174?text=Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o.">
+        <img src="./img/whatsapp.png" class="img-whats" alt="img-link-whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" 
+        action="https://formcarry.com/s/tjKwFxe5Dg2" 
+        method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="name">
+        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui..." name="duvidas"></textarea>
+        <button class="botao-form" type="submit">Pedir orçamento</button>
+    </form>
+    <div class="mascaraForm" onclick="cliqueMascara()"></div>
+
+</body>
+<script src="./Script.js"></script>
+
+</html>

@@ -16,7 +16,7 @@
 
 p {
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -97,6 +97,7 @@ a img {
     color: white;
     font-size: 30px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header a:hover {
@@ -176,3 +177,45 @@ textarea {
         left:50%;
         transform: translateX(-50%);
 */
+
+@media(max-width:950px){
+.caixa-mae{
+    flex-direction: column;
+    padding: 25px;
+}
+p{
+    font-size: 10px;
+}
+.img-mario-luigi {
+    height: 250px;
+}
+.logo-mario {
+    height: 100px;
+    margin-bottom: 15px;
+}
+button {
+    width: 100px;
+    height: auto;
+    font-size: 10px;
+}
+.header {
+    gap: 15px;
+    margin: 15px;
+    display: flex;
+   justify-content:center ;
+}
+.header a {
+    font-size:20px;
+}
+
+.header img {
+   display: none;
+}
+.box-main {
+    width: 300px;
+}
+button:hover {
+    font-size: 10px;
+    width: 150px;
+    height: auto
+}
